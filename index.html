@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revivendo o Rock nacional</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Cabeçalho com logo e barra de navegação -->
+    <header>
+        <div class="logo">
+            <img src="images/LOGO.png" alt="Reviva Voz Logo"> 
+        </div>
+        <nav>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <a href="#sorteio">Sorteio de Ingressos</a>
+            <a href="#regulamento">Regulamento</a>
+            <a href="#cadastro">Cadastro</a>
+            <div class="user-icon">
+                <img src="images/icon.svg" alt="Ícone de Usuário"> 
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteudo principal -->
+    <div class="content">
+        <h2>Revivendo o Rock Nacional!</h2>
+        <h1>O maior festival Cover de Rock</h1>
+        <p>De Cazuza a Rita Lee, de Raul Seixas ao Capital Inicial, o rock nacional é um verdadeiro mosaico de talentos e histórias. E mais do que nunca, precisamos resgatar essa memória ! E foi pensando nisso que o <strong>REVIVA VOZ</strong> surgiu</p>
+
+        <!-- Botões -->
+        <div class="buttons">
+            <button>Inscreva-se</button>
+            <button>Programação</button>
+        </div>
+
+        <div class="guitar-image">
+            <img src="images/IMAGEM GUITARRA (1).png" alt= "Imagem de uma guitarra"> 
+        </div>
+    </div>
+
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe apaixonada por música, cultura e impacto social. Nosso objetivo é reviver a essência do rock nacional, celebrando as grandes lendas e abrindo espaço para que novos talentos mostrem sua arte ao mundo.</p>
+        <br>
+        <p> Acreditamos que a música tem o poder de unir pessoas, promover mudanças e despertar sentimentos únicos, e é por isso que criamos o Reviva Voz.</p>
+
+        <p> Nosso festival nasceu da ideia de conectar gerações, trazendo de volta os clássicos que marcaram épocas, como Legião Urbana, Cazuza e Rita Lee, enquanto também impulsionamos a nova geração de músicos brasileiros.</p>
+
+        
+        <div class="about-image">
+            <img src="images/image.png" alt="Imagem de equipe se abraçando"> 
+        </div>
+    </section>
+
+    
+<section id="sorteio">
+    <h2>Sorteio de Ingressos</h2>
+    <div class="sorteio-content">
+        <div class="sorteio-text">
+            <p>O Reviva Voz  é um evento gratuito, criado para celebrar o rock nacional e apoiar novos talentos da música. Para garantir uma experiência organizada e justa para todos os participantes, o acesso ao evento será realizado por meio de um sorteio de ingressos.</p>
+            <p>Com isso, podemos manter a entrada gratuita, ao mesmo tempo em que controlamos a capacidade do local e proporcionamos uma experiência de qualidade para todos os presentes.</p>
+            <h3>Como funciona?</h3>
+            <p>Para concorrer a um ingresso, basta realizar o cadastro no nosso site, informando nome, e-mail e CPF. Após o cadastro, você receberá um código único de participação.</p>
+            <div class="sorteio-image">
+                <img src="images/INGRESSO.png" alt="Imagem de show de rock"> 
+            </div>
+        
+        </div>
+    </div>
+
+    
+<section id="regulamento">
+    <h2>Regulamento</h2>
+    <ol>
+        <li><strong>Cadastro único:</strong> Cada participante poderá realizar apenas um cadastro. Em caso de múltiplas inscrições com o mesmo CPF, apenas o primeiro será considerado válido.</li>
+        <li><strong>Dados verídicos:</strong> Todos os participantes devem fornecer dados reais e completos (Nome, E-mail, CPF) no momento do cadastro.</li>
+        <li><strong>Faixa etária:</strong> A participação no evento é permitida apenas para maiores de 18 anos. Menores de idade poderão comparecer somente acompanhados por responsáveis.</li>
+        <li><strong>Código único de participação:</strong> Após o cadastro, cada participante receberá um código único que deverá ser apresentado no dia do evento. Esse código será a identificação válida para acesso ao evento.</li>
+        <li><strong>Fraude e conduta inadequada:</strong> Qualquer tentativa de fraude, como o envio de dados falsos ou comportamento inadequado durante o evento, resultará na desclassificação imediata.</li>
+        <li><strong>Cancelamento da participação:</strong> O participante poderá solicitar o cancelamento de sua inscrição até 48 horas antes do evento.</li>
+    </ol>
+</section>
+
+
+<section id="cadastro">
+    <h2>Cadastro</h2>
+    <form action="submit_form.php" method="post">
+        <div class="form-group">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="date" name="data_nascimento" placeholder="Data de nascimento" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="E-mail de login" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+        </div>
+        <div class="form-group">
+    <select name="eventos_disponiveis" required>
+        <option value="">Eventos disponíveis</option>
+        <option value="evento1">15 de Novembro | 18:00 - Os Urbanos (Cover de Legião Urbana) | Artista: Pedro Silva</option>
+        <option value="evento2">15 de Novembro | 19:00 - Filhos do Brasil (Cover de Cazuza e Barão Vermelho) | Artista: Lucas Andrade</option>
+        <option value="evento3">15 de Novembro | 21:30 - Eletricidade (Cover de Rita Lee) | Artista: Clara Monteiro</option>
+        <option value="evento4">15 de Novembro | 22:30 - Alquimia do Som (Cover de Os Paralamas do Sucesso) | Artista: Rafael Moura</option>
+    </select>
+</div>
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Já possui uma conta? <a href="#login">Entrar</a></p>
+</section>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <img src="images/LOGO.png" alt="Logo Reviva Voz">
+        </div>
+        
+       
+        <div class="footer-redes">
+            <h3>Redes</h3>
+            <p><img src="images/Vector.png" alt="Instagram Icon"> <a href="https://www.instagram.com/revivavoznacional">@revivavoznacional</a></p>
+            <p><img src="images/icon facebook.png" alt="Facebook Icon"> <a href="https://www.facebook.com/revivavoznacional">@revivavoznacional</a></p>
+            <p><img src="images/icon youtube.png" alt="youtube Icon"> <a href="https://www.twitter.com/RevivaVozBrasil">RevivaVozBrasil</a></p>
+        </div>
+        
+        <div class="footer-contato">
+            <h3>Contato</h3>
+            <p><img src="images/icon whats.png" alt="WhatsApp Icon"> <a href="https://wa.me/5571021236558">WhatsApp: +55 (71) 02123-6558</a></p>
+            <p><img src="images/icon gmail.png" alt="Email Icon"> <a href="mailto:revivavoz@gmail.com">Email: Revivavoz@gmail.com</a></p>
+            <p><img src="images/icon telefone.png" alt="Phone Icon"> Telefone: +55 (71) 0500-1499</p>
+        </div>
+        
+        
+        <div class="footer-localizacao">
+            <h3>Localização</h3>
+            <p><img src="images/icon maps.png " alt= "Location Icon"> Av. Rosário de Maria, 150, Salvador, BA 40789-152</p>
+        </div>
+    </div>
+</footer>
+</section>
+</body>
+</html>
